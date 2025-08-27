@@ -1,0 +1,100 @@
+/*.login-pf body {*/
+/*    background: url("../img/209884-P06QVG-296.jpg") no-repeat top left fixed;*/
+/*    background-color: white;*/
+/*    height: 100%;*/
+/*    !* Center and scale the image nicely *!*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    outline: 4px solid magenta !important;*/
+/*}*/
+
+/* --- Fond pleine page avec overlay sombre --- */
+body.login-pf {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+
+    background: url("../img/22756685.webp") no-repeat center center fixed;
+    background-size: cover;
+
+    position: relative;
+    min-height: 100vh;
+}
+
+/* voile sombre sur l’image */
+body.login-pf::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* ajustable : 0.5 = 50% d’opacité */
+    z-index: 0;
+}
+
+/* --- Conteneur du formulaire Keycloak --- */
+.login-pf body .card-pf,
+#kc-form-login {
+    position: relative;
+    z-index: 1; /* au-dessus du voile */
+    margin: 8% auto;
+    max-width: 420px;
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9); /* effet verre dépoli */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px); /* effet moderne */
+}
+
+/* --- Titres --- */
+#kc-page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* --- Inputs --- */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* --- Boutons --- */
+button,
+input[type="submit"] {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #0062E6, #33AEFF);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #0053c7, #2699ff);
+    transform: translateY(-2px);
+}
+
+/* --- Liens --- */
+a {
+    color: #0062E6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
