@@ -26,7 +26,7 @@ spring:
       client:
         provider:
           keycloak:
-            issuer-uri: http://localhost:8080/realms/bzhcamp
+            issuer-uri: http://localhost:8080/realms/foadgl
             user-name-attribute: preferred_username
 
         registration:
@@ -40,5 +40,5 @@ spring:
 
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/bzhcamp
+          issuer-uri: http://localhost:8080/realms/foadgl
 
