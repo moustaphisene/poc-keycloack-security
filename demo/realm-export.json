@@ -1,6 +1,6 @@
 {
-  "id": "bzhcamp",
-  "realm": "bzhcamp",
+  "id": "foadgl",
+  "realm": "foadgl",
   "enabled": true,
   "internationalizationEnabled": true,
   "supportedLocales": [
@@ -14,8 +14,8 @@
     "auth": "",
     "port": "1025",
     "host": "smtp",
-    "replyTo": "no-reply@bzhcamp.local",
-    "from": "admin@bzhcamp.local",
+    "replyTo": "no-reply@foadgl.local",
+    "from": "admin@foadgl.local",
     "fromDisplayName": "",
     "envelopeFrom": "",
     "ssl": "false"
@@ -36,13 +36,13 @@
   ],
   "users": [
     {
-      "username": "jerome",
-      "email": "jerome@local.lan",
+      "username": "mariama",
+      "email": "mariama@foadgl.lan",
       "enabled": true,
       "credentials": [
         {
           "type": "password",
-          "value": "jerome"
+          "value": "mariama"
         }
       ]
     }
