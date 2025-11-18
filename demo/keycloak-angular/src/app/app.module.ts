@@ -9,7 +9,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
     keycloak.init({
       config: {
-        realm: 'bzhcamp',
+        realm: 'foadgl',
         url: 'http://localhost:8080',
         clientId: 'keycloak-angular'
       },
